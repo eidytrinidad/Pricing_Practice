@@ -66,7 +66,7 @@ body {
   margin: auto; }
 
 header {
-  padding: 50px;
+  padding: 40px;
   width: 100%; }
   header .contenedor {
     display: flex;
@@ -83,5 +83,56 @@ header {
       header .contenedor .switchBox p {
         font-size: 0.9rem;
         color: #b3b5c6; }
+
+.cardsBox {
+  margin-bottom: 600px; }
+  .cardsBox .container .boton {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.12rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none; }
+  .cardsBox .container .card2 {
+    margin-top: 25px; }
+  .cardsBox .container .active {
+    background-image: linear-gradient(#a3a8f0, #696fdd);
+    height: 480px; }
+    .cardsBox .container .active .card-body .card-title {
+      color: #fff; }
+    .cardsBox .container .active .card-body .price {
+      color: #fff;
+      border-bottom: 1px solid #f6f6fe; }
+    .cardsBox .container .active .card-body .list li {
+      color: #fff;
+      border-bottom: 1px solid #f6f6fe; }
+    .cardsBox .container .active .card-body .boton2 {
+      margin: 1rem 0;
+      color: #6d708d;
+      background-color: #f6f6fe; }
+  .cardsBox .container .card {
+    border-radius: 0.9rem;
+    float: left; }
+    .cardsBox .container .card .card-body {
+      text-align: center; }
+      .cardsBox .container .card .card-body p {
+        font-size: 0.94rem;
+        color: #6d708d; }
+      .cardsBox .container .card .card-body h2 {
+        font-size: 3rem;
+        color: #494c5f;
+        border-bottom: 1px solid #b3b5c6;
+        padding: 1.5rem 0; }
+      .cardsBox .container .card .card-body ul {
+        list-style: none; }
+        .cardsBox .container .card .card-body ul li {
+          font-size: 0.94rem;
+          color: #6d708d;
+          border-bottom: 1px solid #b3b5c6;
+          padding: 1rem 0; }
+      .cardsBox .container .card .card-body .btn1 {
+        background-image: linear-gradient(#a3a8f0, #696fdd);
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
