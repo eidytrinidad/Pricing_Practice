@@ -35,10 +35,10 @@
   transition: .4s; }
 
 input:checked + .slider {
-  background: linear-gradient(#a3a8f0, #696fdd); }
+  background: #aeb3cb; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px linear-gradient(#a3a8f0, #696fdd); }
+  box-shadow: 0 0 1px #aeb3cb; }
 
 input:checked + .slider:before {
   transform: translateX(15px); }
@@ -66,7 +66,7 @@ body {
   margin: auto; }
 
 header {
-  padding: 40px;
+  padding: 30px;
   width: 100%; }
   header .contenedor {
     display: flex;
@@ -103,6 +103,7 @@ header {
       margin-top: 25px; }
     .cardsBox .container .active {
       background-image: linear-gradient(#a3a8f0, #696fdd);
+      height: 430px;
       padding-top: 25px; }
       .cardsBox .container .active .card-body .card-title {
         color: #fff; }
@@ -114,9 +115,12 @@ header {
         border-bottom: 1px solid #f6f6fe; }
       .cardsBox .container .active .card-body .boton2 {
         margin-top: 1rem;
-        margin-bottom: 3rem;
         color: #6d708d;
         background-color: #fff; }
+        .cardsBox .container .active .card-body .boton2:hover {
+          color: #fff;
+          background: none;
+          border: 1px solid #fff; }
     .cardsBox .container .card {
       border-radius: 0.9rem; }
       .cardsBox .container .card .card-body {
@@ -139,5 +143,9 @@ header {
         .cardsBox .container .card .card-body .btn1 {
           background-image: linear-gradient(#a3a8f0, #696fdd);
           color: #fff; }
+          .cardsBox .container .card .card-body .btn1:hover {
+            color: #b3b5c6;
+            background: none;
+            border: 1px solid #b3b5c6; }
 
 /*# sourceMappingURL=style.css.map */

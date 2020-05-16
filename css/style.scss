@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    padding: 40px;
+    padding: 30px;
     width: 100%;
 
     .contenedor {
@@ -81,7 +81,7 @@ header {
 
         .active {
             background-image: $primaryColor;
-           
+           height: 430px;
             padding-top: 25px;
 
             .card-body {
@@ -103,9 +103,16 @@ header {
 
                 .boton2 {
                     margin-top: 1rem;
-                    margin-bottom: 3rem;
+                    //margin-bottom: 3rem;
                     color: $GrayishBlue;
                     background-color: #fff;
+
+                    &:hover
+                    {
+                        color: #fff;
+                        background:none;
+                        border: 1px solid #fff;
+                    }
 
                 }
             }
@@ -149,6 +156,13 @@ header {
                 .btn1 {
                     background-image: $primaryColor;
                     color: #fff;
+
+                    &:hover
+                    {
+                        color: $LightGrayishBlue;
+                        background:none;
+                        border: 1px solid $LightGrayishBlue ;
+                    }
                 }
 
             }
