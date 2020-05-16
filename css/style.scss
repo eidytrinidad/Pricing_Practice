@@ -14,6 +14,20 @@ body {
 
 }
 
+.img1
+{
+    width: 350px;
+    position: absolute;
+    right: 0;
+}
+.img2
+{
+    width: 350px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
 .contenedor {
     width: 90%;
     max-width: 1000px;
@@ -21,7 +35,7 @@ body {
 }
 
 header {
-    padding: 30px;
+    padding: 20px;
     width: 100%;
 
     .contenedor {
@@ -54,7 +68,7 @@ header {
 }
 
 .cardsBox {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     width: 100%;
 
     .container {
@@ -81,8 +95,9 @@ header {
 
         .active {
             background-image: $primaryColor;
-           height: 430px;
+            height: 430px;
             padding-top: 25px;
+            
 
             .card-body {
                 .card-title {
@@ -103,7 +118,7 @@ header {
 
                 .boton2 {
                     margin-top: 1rem;
-                    //margin-bottom: 3rem;
+                   
                     color: $GrayishBlue;
                     background-color: #fff;
 
@@ -122,9 +137,9 @@ header {
 
         .card {
 
-
+            border: none;
             border-radius: 0.9rem;
-
+            box-shadow: -2px 3px 5px 0px rgba($color: rgb(194, 194, 194), $alpha:.70);
             .card-body {
 
                 text-align: center;
@@ -171,27 +186,34 @@ header {
     }
 }
 
-// @media only screen and (max-width:850px) {
-//     .cardsBox {
-//         margin-bottom: 50px;
-//         width: 100%;
+@media only screen and (max-width:800px) {
+    .cardsBox {
+        margin-bottom: 50px;
+        width: 100%;
 
-//         .container {
+        .container {
 
-//             display: flex;
-//             justify-content: center;
-//             flex-direction: column;
-//             align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
-//             .active {
-//                 .boton2 {
-                   
-//                     margin-bottom: 0rem;
+            .card2 {
+                margin-top: 0;
+    
+            }
+        
+            .card
+            {
+                margin-bottom: 25px;
+            }
+    
+            .active {
+                height: 0px;
+            padding-top:0px;
+            }
+        }
 
-//                 }
-//             }
-//         }
+    }
 
-//     }
-
-// }
+}
