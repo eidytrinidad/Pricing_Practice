@@ -1,72 +1,71 @@
 @import 'fontsColors.scss';
 @import 'slider.scss';
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     background-color: $VeryLightGrayishBlue;
 
 }
 
-.contenedor
-{
+.contenedor {
     width: 90%;
     max-width: 1000px;
     margin: auto;
 }
 
-header
-{
-    padding:40px;
+header {
+    padding: 40px;
     width: 100%;
-    .contenedor
-    {
+
+    .contenedor {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    
-        .title
-        {
+
+        .title {
             color: $GrayishBlue;
             margin-bottom: 30px;
-            h1
-            {
+
+            h1 {
                 font-size: 2rem;
             }
         }
- 
-        .switchBox
-        {
+
+        .switchBox {
             display: flex;
-            p
-            {
+
+            p {
                 font-size: 0.9rem;
                 color: $LightGrayishBlue;
-               
+
             }
-            
+
         }
-      
+
     }
 }
 
-.cardsBox
-{
-    margin-bottom: 600px;
-    .container
-    {
-      
+.cardsBox {
+    margin-bottom: 50px;
+    width: 100%;
 
-        .boton
-        {
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .boton {
             margin: 1rem 0;
-           
+
             font-size: 0.8rem;
             letter-spacing: 0.12rem;
             padding: 0.5rem 0;
@@ -75,82 +74,79 @@ header
             border: none;
         }
 
-        .card2
-        {
+        .card2 {
             margin-top: 25px;
-            
+
         }
-        
-        .active
-        {background-image: $primaryColor;
-         height: 480px;
-            .card-body
-            {
-                .card-title
-                {
+
+        .active {
+            background-image: $primaryColor;
+           
+            padding-top: 25px;
+
+            .card-body {
+                .card-title {
                     color: #fff;
                 }
-                .price 
-                { color: #fff;
+
+                .price {
+                    color: #fff;
                     border-bottom: 1px solid $VeryLightGrayishBlue;
                 }
 
-                .list 
-                {
-                    li 
-                    {
+                .list {
+                    li {
                         color: #fff;
                         border-bottom: 1px solid $VeryLightGrayishBlue
                     }
                 }
-                .boton2
-                {
-                    margin: 1rem 0;
-                    color:$GrayishBlue;
-                    background-color:$VeryLightGrayishBlue;
-            
+
+                .boton2 {
+                    margin-top: 1rem;
+                    margin-bottom: 3rem;
+                    color: $GrayishBlue;
+                    background-color: #fff;
+
                 }
             }
 
-        
+
         }
-        .card{
+
+        .card {
+
 
             border-radius: 0.9rem;
-          float: left;
-            .card-body
-            {
-                
+
+            .card-body {
+
                 text-align: center;
-                
-                p 
-                {
+
+                p {
                     font-size: 0.94rem;
                     color: $GrayishBlue;
                 }
 
-                
-                h2 
-                {
+
+                h2 {
                     font-size: 3rem;
                     color: $DarkGrayishBlue;
                     border-bottom: 1px solid $LightGrayishBlue;
-                    padding: 1.5rem 0;
+                    padding: 1rem 0;
                 }
-                ul 
-                {
+
+                ul {
                     list-style: none;
-                    li 
-                    {
+
+                    li {
                         font-size: 0.94rem;
                         color: $GrayishBlue;
                         border-bottom: 1px solid $LightGrayishBlue;
-                        padding: 1rem 0;
+                        padding: 0.6rem 0;
                     }
                 }
 
-                .btn1
-                {
+                .btn1 {
                     background-image: $primaryColor;
                     color: #fff;
                 }
@@ -160,3 +156,28 @@ header
         }
     }
 }
+
+// @media only screen and (max-width:850px) {
+//     .cardsBox {
+//         margin-bottom: 50px;
+//         width: 100%;
+
+//         .container {
+
+//             display: flex;
+//             justify-content: center;
+//             flex-direction: column;
+//             align-items: center;
+
+//             .active {
+//                 .boton2 {
+                   
+//                     margin-bottom: 0rem;
+
+//                 }
+//             }
+//         }
+
+//     }
+
+// }
